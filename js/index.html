@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ECharts数据可视化Demo</title>
+    <link rel="stylesheet" href="../css/index.css" />
+    <link rel="stylesheet" href="../css/flexible.css" />
+    <script src="../libs/flexible.js"></script>
+    <script src="../libs/echarts.min.js"></script>
+    <script src="../common/currentTime.js"></script>
+    <script src="../common/windowResize.js"></script>
+  </head>
+
+  <body>
+    <!-- 头部的盒子 -->
+    <header class="header">
+      <img src="../images/data.png" alt="data" title="Data" />
+      <h1>ECharts数据可视化Demo</h1>
+      <img src="../images/time.png" alt="Current time" title="Current Time" />
+      <div class="showTime"></div>
+    </header>
+
+    <!-- 页面主体 -->
+    <section class="main-content">
+      <!-- 左侧部分 -->
+      <div class="column">
+        <div class="panel bar">
+          <h2>柱状图-就业行情</h2>
+          <div class="chart"></div>
+          <div class="panel-footer"></div>
+        </div>
+        <div class="panel line">
+          <h2>折线图-降水量分析</h2>
+          <div class="chart"></div>
+          <div class="panel-footer"></div>
+        </div>
+        <div class="panel pie">
+          <h2>饼图-某站点客户访问来源</h2>
+          <div class="chart"></div>
+          <div class="panel-footer"></div>
+        </div>
+      </div>
+
+      <!-- 中间部分 -->
+      <div class="column">
+        <div class="panel mapPanel">
+          <h2>中间部分数据展示</h2>
+          <div class="chart1"></div>
+          <div class="chart2"></div>
+          <div class="china-map-chart"></div>
+        </div>
+      </div>
+
+      <!-- 右侧部分 -->
+      <div class="column">
+        <div class="panel profits">
+          <h2>收入-支出正负柱状图</h2>
+          <div class="chart"></div>
+          <div class="panel-footer"></div>
+        </div>
+        <div class="panel tempreature">
+          <h2>未来一周气温变化</h2>
+          <div class="chart"></div>
+          <div class="panel-footer"></div>
+        </div>
+        <div class="panel waterVolume">
+          <h2>降水量数据走势</h2>
+          <div class="chart"></div>
+          <div class="panel-footer"></div>
+        </div>
+      </div>
+    </section>
+    <script type="text/javascript">
+      document.getElementsByTagName("body")[0].style.zoom = 1;
+    </script>
+    <!-- 最后引入index.js确保dom加载完成 -->
+    <script src="../common/index.js"></script>
+  </body>
+</html>
